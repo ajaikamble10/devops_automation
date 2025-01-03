@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment # Kubernetes resource kind we are creating
 metadata:
-  name: devops-automation
+  name: devops-automation-deployment
 spec:
   selector:
     matchLabels:
@@ -24,7 +24,7 @@ spec:
 apiVersion: v1 #Kubernetes API version
 kind: Service #Kubernetes resource kind we creating
 metadata:   #Metadat of the resource kind we creating
-    name: devops-automation
+    name: devops-automation-svcc
 spec: 
     selector: 
       app: devops-automation
